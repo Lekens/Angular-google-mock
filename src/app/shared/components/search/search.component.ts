@@ -85,7 +85,9 @@ export class SearchComponent implements OnInit {
     }
   }
   public notifyDomOfThisClick() {
-    if (this.loaders.startTyping) { this.loaders.startTyping = false;}
+    if (this.loaders.startTyping) {
+      this.loaders.startTyping = false;
+    }
     this.eventService.broadcast('SEARCH_INITIATED');
   }
   public proceedToCheckDictionary() {
